@@ -1,270 +1,281 @@
-<!DOCTYPE html>
-<html lang="de">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Renkenbau</title>
-    <link rel="stylesheet" href="stylesheet.css" />
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
 
-    <script src="script.js"></script>
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow-x: hidden;
+}
 
-    
-    <link rel="apple-touch-icon" sizes="76x76" href="img/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
-    <link rel="manifest" href="img/site.webmanifest">
-    <link rel="mask-icon" href="img/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#2b5797">
-    <meta name="theme-color" content="#ffffff">
+.header {
+  background-color: rgb(243, 243, 243);
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  width: 100%;
+  box-shadow: 0px 5px 15px 1px rgba(0, 0, 0, 0.34);
+  position: fixed;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+}
 
+.navbar {
+  display: flex;
+  align-items: baseline;
+  gap: 2rem;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+}
 
-  </head>
-  <body>
-    <div id="header" class="header">
+@media only screen and (max-width: 900px) {
+  .navbar {
+    gap: 1rem;
+  }
+}
 
-      <a href="#about"><img id="logo" class="Logo" src="img/Logo.png"  alt="" /></a>
-      <img class="heading" src="img/head.png" alt="" />
-      
-      <div class="navbar">
-        <a class="links" href="#Leistungen">Leistungen</a>
-        <a class="links" href="#Referenzen">Referenzen</a>
-        <a class="links" href="#Qualifikationen">Qualifikationen</a>
-        <a class="links" href="#Partner">Partner</a>
-        <a class="links" href="#Kontakt">Kontakt</a>
-      </div>
-    </div>
+.links {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  font-family: sans-serif;
+  letter-spacing: 0.5px;
+  position: relative;
+  transition: 0.2s;
+}
 
-    <div id="about" class="about">
-      <div class="about-text">
-        <h1 class=>Über uns</h1>
-        Die Firma Renken Bau GmbH & Co.KG ist ein in Brake ansässiges
-        Bauunternehmen und blickt heute auf eine über 100-jährige Tradition als
-        Familienunternehmen zurück.
-        <br />
-        <br />
-        Wir führen vorrangig Stahlbeton- und Maurerarbeiten für öffentliche,
-        gewerbliche und private Auftraggeber aus. Unser Einsatzgebiet ist der
-        Bereich Wesermarsch, Bremerhaven, Cuxhaven, Bremen und Oldenburg. Wir
-        sind ein bodenständiges Unternehmen und bekannt für unkomplizierte und
-        kompetente Leistungsausführung.
-        <br />
-        <br />
-        Ziel unserer Arbeit ist die Umsetzung der Ansprüche unserer Auftraggeber
-        und die entsprechende qualitätsbewusste Ausführung in solider
-        Handwerksarbeit, sowie die termingerechte Erstellung der Objekte.
-      </div>
-      <div class="left-up">
-        <img class="Büro" src="img/Otto-Hahn-Straße 16.jpeg" alt="" />
-      </div>
-    </div>
+@media only screen and (max-width: 1000px) {
+  .links {
+    font-size: 16px;
+  }
+}
 
-    <div id="Leistungen" class="Leistungen">
-      <div class="Leistungen-topic">
-        <h1 class="topic">Leistungen</h1>
-        <div class="Leistungen-text">
-          Schwerpunkt unserer Tätigkeit ist der Hochbau. <br />
-          Mit unseren eigenen qualifizierten Mitarbeitern <br />
-          realisieren wir Bauprojekte der folgenden Bereiche.
+@media only screen and (max-width: 950px) {
+  .links {
+    font-size: 12px;
+  }
+}
 
-        </div>
-      </div>
-      <div class="list">
-        
-        <div class="grid">Industriebauten</div>
-        <div class="grid">Gewerbeobjekte</div>
-        <div class="grid">Ein- und Mehrfamilienhäuser</div>
-        <div class="grid">Ingenieurbauwerke</div>
-        <div class="grid">Altbausanierung</div>
-        <div class="grid">Umbauarbeiten</div>
-      </div>
-    </div>
+@media only screen and (max-width: 900px) {
+  .links {
+    font-size: 10px;
+  }
+}
 
-    <div id="Referenzen" class="Referenzen">
-      <h1 class="topic">Referenzen</h1>
-      <div class="rgrid">
-    
-        <div class="r1">
-          <div class="r1topic">
-            Sanierung eines Bauernhauses
-          </div>
-          <img class="r1img" src="img/Bauernhaus.jpg" alt="Bauernhaus" />
-          <div class="caption">
-            <div>
-              Leistungen:<br />
-              Bauherr: <br>
-              Planung/Bauleitung:<br />
-            </div>
-            <div>
-              Stahlbeton- und Maurerarbeiten <br />
-              Privat <br>
-              Architekturbüro Logemann, Neuenhuntdorf
-            </div>
-          </div>
-        </div>
-    
-        <div class="r1">
-          <div class="r1topic">
-            Erweiterungsbau Lutherschule, Bremerhaven
-          </div>
-          <img class="r1img" src="img/Lutherschule Neubau 2.jpg" alt="Lutherschule" />
-          <div class="caption">
-            <div>
-              Leistungen:<br />
-              Bauherr: <br />
-              Planung/Bauleitung:<br />
-            </div>
-            <div>
-              Stahlbeton-, Maurer- und Kanalarbeiten <br />
-              Seestadtimmobilien Bremerhaven <br />
-              JPS Architekten, Bremerhaven
-            </div>
-          </div>
-        </div>
-    
-        <div class="r1">
-          <div class="r1topic">
-            Umbau eines SB-Warenhauses, Brake
-          </div>
-          <img class="r1img" src="img/Warenhaus.jpg" alt="SB-Warenhaus" />
-          <div class="caption">
-            <div>
-              Leistungen:<br />
-              Bauherr: <br />
-              Planung/Bauleitung:<br />
-            </div>
-            <div>
-              Bauhauparbeiten <br />
-              J.Büntig AG, Leer <br />
-              Architekturbüro Beyer+Freitag+Zeh, Emden
-            </div>
-          </div>
-        </div>
-    
-        <div class="r1">
-          <div class="r1topic">
-            Neubau Halle Holzprofi, Brake
-          </div>
-          <img class="r1img" src="img/Halle Holzprofi.jpg" alt="Halle Holzprofi" />
-          <div class="caption">
-            <div>
-              Leistungen:<br />
-              Bauherr: <br />
-              Planung/Bauleitung:<br />
-            </div>
-            <div>
-              Stahlbeton- und Maurerarbeiten <br />
-              Fa. Barghorn, Brake <br />
-              Architekturbüro Bolte, Brake
-            </div>
-          </div>
-        </div>
-    
-      </div>
-    </div>
-    
-    </div>
-    <div id="Qualifikationen" class="Qualifikationen">
-      <h1 class="topic">Qualifikationen</h1>
+.links:hover {
+  text-decoration: underline #0067ac;
+}
 
-      <div class="Info">
+.Logo {
+  width: 70%;
+  padding-top: 1px;
+  transition: 0.2s;
+}
 
-        <div class="Präqualifikation">
-          <h3>Präqualifikation</h3>
-          Wir sind für die u.g. Leistungsbereiche unter der Registrierungsnummer
-          <br />
-          010.061240 präqualifiziert und in die Liste der präqualifizierten <br />
-          Unternehmen beim Verein für die Präqualifikation von Bauunternehmen
-          unter
-          <br />
-          www.pq-verein.de eingetragen. 111-01 Betonarbeiten 111-04 Maurerarbeiten
-          <br />
-          (natürl.künstl. Steine) einschl. Verblendungsmauerwek
-        </div>
-      
-      <div class="Fachbetrieb">
-        <h3>Fachbetrieb nach §19 I Wasserhaushaltsgesetz (WHG)</h3>
-        Wir besitzen den Fachbetriebsnachweis für Tätigkeiten an Anlagen zum
-        <br />
-        Umgang mit wassergefährdenden Stoffen und-
-        <br />
-        Arbeiten an Dichtflächen aus Beton <br />
-        Arbeiten an Dichtflächen aus Asphalt <br />
-        Beschichtungsarbeiten <br />
-        Verlegen von Dichtungsbahnen
-      </div>
-      <div class="Herstellung">
-        <h3>
-          Herstellung von Bewehrungsanschlüssen mit UPAT-Verbundmörtel UPM 44
-        </h3>
-        Wir sind geschult, nachträglich eingemörtelte Bewehrungsanschlüsse mit dem
-        <br />
-        UPAT-Verbund- mörtel UPM 44 entsprechend der allgemein bauaufsichtlichen
-        <br />
-        Zulassung Z-21.8-1647 des Deutschen Instituts für Bautechnik herzustellen.
-      </div>
-      </div>
-      
-    </div>
+.heading {
+  position: relative;
+  visibility: visible;
+}
 
-    <div id="Partner" class="Partner">
-      <h1 class="topic">Partner</h1>
-      
-      <div class="Verpartnerung">
+@media only screen and (max-width: 1700px) {
+  .heading {
+    visibility: hidden;
+    position: absolute;
+  }
+}
 
-      <div class="Termico">
-        <h3>Leistungen</h3>
-        Hohlraumdämmung, Dachbodendämmung und <br> 
-        Wärmedämmverbundsystem
-        <div >
-          <i><img class="partnerimage" src="img/termico1.jpg" alt="" /></i>
-        </div>
-      </div>
-      <div class="Kempe">
-        <h3>Leistungen</h3>
-        Fliesenarbeiten und Kaminofenbau
-        <div >
-          <i><img class="partnerimage" src="img/Kempe.png" alt="" /></i>
-        </div>
-      </div>
+.about {
+  padding-top: 5rem;
+  gap: 5rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column-reverse;
+  padding-bottom: 5rem;
+  transition: 0.2s;
+}
 
-      </div>
-      
-      
-    </div>
+@media only screen and (max-width: 734px) {
+  .about {
+    padding-top: 8rem;
+  }
+}
 
-    <div id="Kontakt" class="Kontakt">
-      <h1 class="topic">Kontakt</h1>
+@media only screen and (max-width: 500px) {
+  .about {
+    padding-top: 15rem;
+  }
+}
 
-      <div class="Kontaktdaten">
-        <div>
-          <h3>Büro</h3>
-          Tel,: 04401 - 704 704 <br />
-          Fax: 04401 - 704 709 <br />
-          Email: <a href="mailto: mail@renkenbau.de">mail@renkenbau.de</a>
-        </div>
-        <div>
-          <h3>Dipl.Ing. Anne Renken</h3>
-          Mobil: 0162 - 24 22 811 <br />
-          Email:
-          <a href="mailto: anne.renken@renkenbau.de">anne.renken@renkenbau.de</a>
-        </div>
-  
-        <div>
-          <h3>Jan Renken</h3>
-          Mobil: 0162 - 24 22 812 <br />
-          Email:
-          <a href="mailto: jan.renken@renkenbau.de">jan.renken@renkenbau.de</a>
-        </div>
-  
-        
-      </div>
-      
-    </div>
-<footer>
+.about-text {
+  text-align: center;
+  font-size: 20px;
+  justify-content: center;
+  width: 100%;
+}
 
-  <div> <a class="links" href="impressum.html">Impressum</a> </div>
-</footer>
-    
-  </body>
-</html>
+.Büro {
+  height: auto;
+  max-width: auto;
+  width: 100%;
+  margin-right: 2rem;
+  border-radius: 10px;
+}
+
+.caption {
+  padding-top: 20px;
+}
+
+.topic {
+  background-color: #0067ac;
+  color: black;
+  text-align: center;
+  padding: 40px;
+  font-weight: 100;
+  border-radius: 20px;
+  margin: 80px;
+  font-size: 40px;
+}
+
+@media only screen and (max-width: 768px) {
+  .topic {
+    padding: 20px;
+    font-size: 20px;
+  }
+}
+
+.Leistungen-topic {
+  font-size: 32px;
+  text-align: center;
+  padding-bottom: 5rem;
+}
+
+.list {
+  display: flex;
+  justify-content: center;
+  font-size: 24px;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.grid {
+  background-color: lightgray;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.Leistungen-text {
+  margin-top: 10rem;
+  margin-bottom: 5rem;
+}
+
+.Referenzen {
+  display: block;
+}
+
+.rgrid {
+  padding-top: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 100%;
+}
+
+.r1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-color: lightgray;
+  height: 370px;
+  padding: 15px;
+  padding-bottom: 60px;
+  border-radius: 10px;
+  width: 450px;
+  margin-bottom: 20px;
+  transition: 0.2s;
+}
+
+@media only screen and (max-width: 768px) {
+  .r1 {
+    height: 400px;
+  }
+}
+
+.caption {
+  display: flex;
+  justify-content: space-between;
+}
+
+.r1topic {
+  flex-grow: 1;
+  font-weight: bold; /* Optional: Betont den Titel */
+}
+
+.r1img {
+  width: 100%; /* Bild passt sich dem Container an */
+  margin-top: 10px; /* Optional: Abstand zwischen Titel und Bild */
+}
+
+.Qualifikation {
+  display: flex;
+  justify-content: center;
+}
+
+.Info {
+  display: block;
+  text-align: center;
+  padding: 5rem;
+}
+
+.Verpartnerung {
+  padding: 5rem;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  gap: 10rem;
+  flex-wrap: wrap;
+}
+
+.partnerimage {
+  width: 400px;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  transition: 0.2s;
+}
+
+@media only screen and (max-width: 768px) {
+  .partnerimage {
+    width: 200px;
+  }
+}
+
+.Kontaktdaten {
+  display: block;
+  text-align: center;
+  padding: 0rem;
+}
+
+.Impressum {
+  padding-top: 10rem;
+  text-align: center;
+  margin-left: 10rem;
+  margin-right: 10rem;
+}
+
+footer {
+  background-color: #f4f4f4;
+  padding: 20px;
+  box-shadow: 0px 5px 15px 1px rgba(0, 0, 0, 0.34);
+  margin-top: 2rem;
+  text-align: center;
+}
