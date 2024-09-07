@@ -27,6 +27,7 @@ body {
   padding: 0;
   margin: 0;
   overflow: hidden;
+  z-index: 100;
 }
 
 .navbar {
@@ -223,7 +224,7 @@ body {
 
 .r1topic {
   flex-grow: 1;
-  font-weight: bold; /* Optional: Betont den Titel */
+  font-weight: bold;
 }
 
 .image-fit {
@@ -236,7 +237,7 @@ body {
 }
 
 .r1img {
-  width: 100%; /* Bild passt sich dem Container an */
+  width: 100%;
   height: auto;
   transition: 1s;
 }
